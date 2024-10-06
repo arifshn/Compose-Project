@@ -1,4 +1,5 @@
 #Compose Project
+
 -ilk olarak dosya dizinini ve klasörleri ayarladım 
 
 -Dosyalara gerekli kodları yazdım ve Dockerfile ı oluşturdum 
