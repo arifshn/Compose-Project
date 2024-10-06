@@ -1,8 +1,8 @@
 #Bazı temel bileşenleri framework den içe aktarıyorum 
 from flask import Flask, render_template, request
-#python ile yazılmış web uygulamalarında  web çatısı olarak çalışır
+#Python ile yazılmış web uygulamalarında  web çatısı olarak çalışır
 app = Flask(__name__)
-#fonksiyonları tanımlıyorum 
+#Fonksiyonları tanımlıyorum 
 @app.route('/')
 def index():
     return render_template('index.html')
