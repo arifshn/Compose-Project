@@ -1,23 +1,37 @@
-#Compose Project
+# Docker Compose Project
 
--ilk olarak dosya dizinini ve klasörleri ayarladım 
+Bu projede, Docker Compose kullanarak birden fazla container içeren bir sistemi ayağa kaldırdım. Aşağıda adım adım ilerlemeler yer almakta.
 
--Dosyalara gerekli kodları yazdım ve Dockerfile ı oluşturdum 
+## Adımlar:
 
--Birbirine bağlı birden fazla container olduğu için hepsini birden ayağa kaldırmak için docker compose kullandım 
+1. **Dizin ve Klasör Yapısını Ayarlama:**
+   - İlk olarak gerekli dosya dizinini ve klasörleri oluşturdum.
 
--Docker compose dosyasını oluşturdum ve projenin ayağa kalkması için gerekli ayarlamaları yaptım 
+2. **Kodların ve Dockerfile'ın Oluşturulması:**
+   - Projede gerekli olan dosyalara kodlar yazıldı ve ardından `Dockerfile` oluşturuldu.
 
--Sonrasında docker compose ile oluşturduğum projemin image ini oluşturdum 
+3. **Docker Compose Kullanımı:**
+   - Birbirine bağlı birden fazla container olduğu için hepsini aynı anda ayağa kaldırmak amacıyla `docker-compose.yml` dosyasını oluşturdum.
+   - Bu dosyada gerekli ayarlamaları yaparak container'ların doğru bir şekilde çalışmasını sağladım.
 
- -docker-compose up --build
+4. **Image Oluşturma ve Projenin Çalıştırılması:**
+   - `docker-compose` ile projenin imajını oluşturdum:
+     ```bash
+     docker-compose up --build
+     ```
 
--Oluşturduğum image dosyasını dockerhub da repository e push atmak kaldı 
+5. **Docker Hub'a Push Atma:**
+   - Oluşturduğum imajı Docker Hub'a yüklemek için önce Docker Hub repository bağlantısını yaptım.
+   - Image dosyasını etiketledim:
+     ```bash
+     docker tag compose_prj arifshn/compose_project:latest
+     ```
+   - Son olarak, imajı Docker Hub'a push ettim:
+     ```bash
+     docker push arifshn/compose_project:latest
+     ```
 
--Öncesinde dockerhub repository i bağladım
+---
 
-  -docker tag compose_prj arifshn/compose_project:latest
+Projenin bütün aşamaları tamamlandı ve başarılı bir şekilde Docker Hub'a push edildi. Artık projen diğer geliştiriciler veya kullanıcılar tarafından kullanılabilir.
 
--Şimdi push atabilirim
-
--docker push arifshn/compose_project:latest
