@@ -8,7 +8,7 @@ Bu projede, Docker Compose kullanarak birden fazla container içeren bir sistemi
    - İlk olarak gerekli dosya dizinini ve klasörleri oluşturdum.
 
 2. **Kodların ve Dockerfile'ın Oluşturulması:**
-   - Projede gerekli olan dosyalara kodlar yazıldı ve ardından `Dockerfile` oluşturuldu.
+   - Projede gerekli olan dosyalara kodları yazdım ve ardından `Dockerfile` oluşturdum.
 
 3. **Docker Compose Kullanımı:**
    - Birbirine bağlı birden fazla container olduğu için hepsini aynı anda ayağa kaldırmak amacıyla `docker-compose.yml` dosyasını oluşturdum.
@@ -33,5 +33,5 @@ Bu projede, Docker Compose kullanarak birden fazla container içeren bir sistemi
 
 ---
 
-Projenin bütün aşamaları tamamlandı ve başarılı bir şekilde Docker Hub'a push edildi. Artık projen diğer geliştiriciler veya kullanıcılar tarafından kullanılabilir.
+Projenin bütün aşamaları tamamlandı ve başarılı bir şekilde Docker Hub'a push edildi. 
 
